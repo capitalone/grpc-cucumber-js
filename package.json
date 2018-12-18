@@ -1,0 +1,47 @@
+{
+    "name": "grpc-cucumber-js",
+    "version": "master",
+    "author": "Katie Scott <reine>",
+    "description": "Gherkin framework for gRPC API cucumber-js testing",
+    "homepage": "https://github.com/capitalone/grpc-cucumber-js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/capitalone/grpc-cucumber-js"
+    },
+    "main": "source/grpccucumberjs.js",
+    "readme": "README.md",
+    "keywords": [
+        "cucumber.js",
+        "integration",
+        "grpc"
+    ],
+    "license": "Apache-2.0",
+    "scripts": {
+        "clean": "rm -rf ./dist",
+        "make-dist": "mkdir ./dist",
+        "prebuild": "yarn run clean && yarn run make-dist",
+        "build": "cp -r ./source ./dist/source && cp ./package.json ./dist/package.json && cp ./README.md ./dist/README.md && cp ./LICENSE.md ./dist/LICENSE.md && [[ ! -f ./.npmrc ]] || cp ./.npmrc ./dist/.npmrc",
+        "lint": "yarn run eslint '**/*.js'",
+        "mock": "node test/mock_target/app.js",
+        "pretest": "pkill -f mock || yarn run mock &",
+        "test": "yarn run cucumber-js --require test/features/step_definitions/*.js --require test/features/support/init.js --tags @core test/features || pkill -f mock",
+        "posttest": "pkill -f mock",
+        "pretest:fail": "pkill -f mock || yarn run mock &",
+        "test:fail": "yarn run cucumber-js --require test/features/step_definitions/*.js --require test/features/support/init.js --tags @fail test/features || pkill -f mock"
+    },
+    "dependencies": {
+        "@grpc/grpc-js": "^0.1.0",
+        "@grpc/proto-loader": "^0.1.0",
+        "JSONPath": "^0",
+        "interpolate": "^0.1.0",
+        "is-my-json-valid": "^2",
+        "merge-options": "^1.0.1",
+        "prettyjson": "^1"
+    },
+    "devDependencies": {
+        "cucumber": "^4.2.1",
+        "eslint": "^5.9.0",
+        "eslint-config-google": "^0.9.1",
+        "grpc": "^1.12.2"
+    }
+}

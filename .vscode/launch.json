@@ -1,0 +1,36 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Cucumber Tests",
+            "type": "node",
+            "request": "launch",
+            "runtimeArgs": [
+                "--nolazy",
+                "--inspect-brk=5858"
+            ],
+            "program": "${workspaceRoot}/node_modules/.bin/cucumber-js",
+            "args": [
+                "-t", "@core"
+            ],
+            "outputCapture": "std",
+            "stopOnEntry": false,
+            "cwd": "${workspaceRoot}/test",
+        },
+        {
+            "name": "Mock Server",
+            "type": "node",
+            "request": "launch",
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "program": "${workspaceRoot}/test/mock_target/app.js",
+            "stopOnEntry": false,
+            "args": [],
+            "cwd": "${workspaceRoot}",
+        }
+    ]
+}

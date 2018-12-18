@@ -1,0 +1,16 @@
+{
+    "extends": ["eslint:recommended", "google"],
+    "parserOptions": {
+        "ecmaVersion": 6
+    },
+    "env": {
+        "node": true,
+        "es6": true
+    },
+    "rules": {
+        "no-trailing-spaces": "off",
+        "require-jsdoc": "off",
+        "max-len": "off",
+        "valid-jsdoc": "off"
+    }
+}
