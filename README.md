@@ -8,7 +8,7 @@ Install with your usual tool via `yarn add grpc-cucumber-js` or `npm install grp
 Then you need to initialize the library to your gprc API in a Before cucumber event.  A good example of a basic set up can be found in [test/features/support/init.js](test/features/support/init.js).
 
 ## Built-in Gherkin Expressions
-The following gherkin expressions are available within the framework [source/grpccucumberjs-steps.js](source/grpccucumberjs-steps.js):
+The following gherkin expressions are available within the framework [source/grpcucumber-steps.js](source/grpcucumber-steps.js):
 
 ```
 GIVEN:
