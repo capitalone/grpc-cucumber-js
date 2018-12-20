@@ -4,11 +4,10 @@ node_js:
 git:
   depth: false
 stages:
-  - compile
   - test
   - name: deploy
     if: branch = master
 jobs:  
   include:
     - stage: test
-      script: yarn run test
+      script: yarn run mock
