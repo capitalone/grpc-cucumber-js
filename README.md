@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/capitalone/grpc-cucumber-js.svg?branch=master)](https://travis-ci.org/capitalone/grpc-cucumber-js) [![npm version](https://badge.fury.io/js/grpc-cucumber-js.svg)](https://badge.fury.io/js/grpc-cucumber-js)
+
+---
+
 # grpc testing framework for cucumber.js
 
 Inspired by handy libraries for testing REST APIs like [apickli](https://github.com/apickli/apickli) or [relish](https://github.com/carbonrobot/relish), this package gives a basic start for cucumber testing against a [gRPC](https://grpc.io/) service.
