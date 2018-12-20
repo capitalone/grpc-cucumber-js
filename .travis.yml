@@ -9,7 +9,7 @@ cache:
 install:
   - yarn
 before_script:
-  - yarn run mock
+  - yarn run mock &
 script:
   - yarn run test
 after_script:
