@@ -1,7 +1,7 @@
 {
     "name": "grpc-cucumber-js",
     "version": "master",
-    "author": "Katie Scott <reine>",
+    "author": "Katie Scott <reineskat@gmail.com>",
     "description": "Gherkin framework for gRPC API cucumber-js testing",
     "homepage": "https://github.com/capitalone/grpc-cucumber-js",
     "repository": {
