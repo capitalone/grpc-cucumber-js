@@ -3,11 +3,3 @@ node_js:
   - "11"
 git:
   depth: false
-stages:
-  - test
-  - name: deploy
-    if: branch = master
-jobs:  
-  include:
-    - stage: test
-      script: yarn run mock
