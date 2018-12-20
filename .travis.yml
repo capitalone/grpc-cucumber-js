@@ -1,4 +1,14 @@
 language: node_js
 node_js:
-  - "10"
   - "11"
+git:
+  depth: false
+stages:
+  - compile
+  - test
+  - name: deploy
+    if: branch = master
+jobs:  
+  include:
+    - stage: test
+      script: yarn run test
