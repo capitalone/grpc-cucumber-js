@@ -19,7 +19,7 @@ deploy:
   provider: script
   script: 
     - yarn run build
-    - yarn publish --new-version ${TRAVIS_TAG} --no-git-tag-version
+    - echo -e "$NPM_USER\n$NPM_EMAIL" | yarn login
   skip_cleanup: true
   on:
     tags: true
