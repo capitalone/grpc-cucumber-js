@@ -60,12 +60,12 @@ Before(function() {
 
 ## Quick commands
 
-| Function             | Command          |
-|:---------------------|:-----------------|
-| Clean up dist folder | `yarn run clean` |
-| Run mock server      | `yarn run mock`  |
-| Run tests            | `yarn run test`  |
-| Run lint             | `yarn run lint`  |
+| Function                   | Command          |
+| :------------------------- | :--------------- |
+| Clean up dist folder       | `yarn run clean` |
+| Run mock server            | `yarn run mock`  |
+| Run tests (run mock first) | `yarn run test`  |
+| Run lint                   | `yarn run lint`  |
 
 # Contributing to grpc-cucumber-js
 
