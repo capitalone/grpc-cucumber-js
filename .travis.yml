@@ -21,5 +21,6 @@ deploy:
     - yarn run build
     - echo -e "$NPM_USER\n$NPM_EMAIL" | yarn login
   skip_cleanup: true
-  # on:
-  #   tags: true
+  on:
+    branch: publish
+    # tags: true
