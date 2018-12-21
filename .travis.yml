@@ -14,7 +14,7 @@ script:
 - yarn lint
 after_script:
 - yarn mock:stop
-deploy_balh:
+deploy:
   provider: npm
   email: reineskat@gmail.com
   skip_cleanup: true
