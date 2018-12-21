@@ -1,3 +1,4 @@
 always-auth=true
+git-tag-version=false
 registry="https://registry.npmjs.org"
 //registry.npmjs.org/:_authToken=${NPM_TOKEN}
