@@ -9,4 +9,4 @@ VERSION=$1
 
 yarn version --new-version ${VERSION}
 git push
-git push --tags
+git push origin v${VERSION}
