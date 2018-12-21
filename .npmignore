@@ -5,4 +5,5 @@ test
 .gitignore
 .npmrc-template
 .travis.yml
+publish.sh
 yarn.lock
