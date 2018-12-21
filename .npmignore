@@ -1,0 +1,9 @@
+.vscode
+node_modules
+test
+.eslintrc
+.gitignore
+.npmrc-template
+.travis.yml
+publish.sh
+yarn.lock

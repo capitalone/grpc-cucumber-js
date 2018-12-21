@@ -1,25 +1,26 @@
 language: node_js
 node_js:
-  - "11"
+- '11'
 git:
   depth: false
 cache:
-  directories:
-    — node_modules
+  directories: "— node_modules"
 install:
-  - yarn
+- yarn
 before_script:
-  - yarn run mock &
+- yarn mock &
 script:
-  - yarn run test
-  - yarn run lint
+- yarn test
+- yarn lint
 after_script:
-  - yarn run mock:stop
+- yarn mock:stop
 deploy:
-  provider: script
-  script: 
-    - yarn run build
-    - echo -e "$NPM_USER\n$NPM_EMAIL" | yarn login
+  provider: npm
+  email: reineskat@gmail.com
   skip_cleanup: true
   on:
+    repo: capitalone/grpc-cucumber-js
     tags: true
+    branch: publish
+  api_key:
+    secure: f0kovgkLLJly5jydaqhR9/i1Gcb0Z6VQnRLpNtRIhYXkbAjZN978CSXu5rKATHHOq9VNZMi9KnqwZmjvTenxAHvQUcwuY75sy94/eQ9sbI5tVrtdwk2bu59jRCKon2kapZ52Kn0UW8EgOC6SXufWtnpcqU3abel1b5t1n6yaLwmNV/+R4j7Y6/ftald2Deyw7V6V2LXUmFtB0UCHSfotoMMGhPBJ9h/kpqFFnaTVZCPLSKTgwbKT0qdEWfUMj5O8dNz8/ejZBwcFxOwxqY7/Js3k3szp9L/gMS/GWDdCd5SraX/NAvhby2NcKsV+isTSP2ySDj583xl7WaC3VEeT/ZG7izE2t+g+y8FAYvCN4F8y8/TnA+UUSt3STMNOUUHBwUg1KGFozog3A8eeuvMeXWuOFQnRizvfwQfcPRohlBR54m0+yTTx+I7RwnK8jb3ukbGe0vsA18daXR1gmyVwP2o2i7avr0dIEqzZWGXLK7byjDLRgmFHG3Y4YQhZQQMn209Ooi2FFfiTYqHZx0KF2HHHymOTRuaLl3QhZWSeTLMR0CpEhpiKuMbYBz3bauESfZ5MKUPQ7PiCh+5CcRgIiWbiFIuZeN7cKWKfV+MRbDESfu6Lg6Hr6AMl9y0DUpWlqACj7LL2wyejM4cpfMEJPbDEJOmnL7/GNIf0zDr97VM=

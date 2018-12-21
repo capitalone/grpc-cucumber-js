@@ -1,6 +1,6 @@
 {
     "name": "grpc-cucumber-js",
-    "version": "master",
+    "version": "1.0.0",
     "author": "Katie Scott <reineskat@gmail.com>",
     "description": "Gherkin framework for gRPC API cucumber-js testing",
     "homepage": "https://github.com/capitalone/grpc-cucumber-js",
@@ -8,7 +8,7 @@
         "type": "git",
         "url": "https://github.com/capitalone/grpc-cucumber-js"
     },
-    "main": "source/grpccucumberjs.js",
+    "main": "source/grpcucumber.js",
     "readme": "README.md",
     "keywords": [
         "cucumber.js",
@@ -17,10 +17,6 @@
     ],
     "license": "Apache-2.0",
     "scripts": {
-        "clean": "rm -rf ./dist",
-        "make-dist": "mkdir ./dist",
-        "prebuild": "yarn run clean && yarn run make-dist",
-        "build": "cp -r ./source ./dist/source && cp ./package.json ./dist/package.json && cp ./README.md ./dist/README.md && cp ./LICENSE.md ./dist/LICENSE.md && [[ ! -f ./.npmrc ]] || cp ./.npmrc-template ./dist/.npmrc",
         "lint": "yarn run eslint '**/*.js'",
         "mock": "node test/mock_target/app.js",
         "mock:stop": "pkill -f mock",
