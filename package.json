@@ -25,7 +25,7 @@
     },
     "dependencies": {
         "@grpc/grpc-js": "^0.1.0",
-        "@grpc/proto-loader": "^0.1.0",
+        "@grpc/proto-loader": "^0.5.4",
         "JSONPath": "^0",
         "interpolate": "^0.1.0",
         "is-my-json-valid": "^2",
