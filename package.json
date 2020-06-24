@@ -28,7 +28,7 @@
         "@grpc/proto-loader": "^0.1.0",
         "JSONPath": "^0",
         "interpolate": "^0.1.0",
-        "is-my-json-valid": "^2",
+        "is-my-json-valid": "^2.20.0",
         "merge-options": "^1.0.1",
         "prettyjson": "^1"
     },
