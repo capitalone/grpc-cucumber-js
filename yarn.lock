@@ -16,11 +16,12 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
-"@grpc/grpc-js@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@grpc/grpc-js/-/grpc-js-0.1.0.tgz#5a2f961505a356e45176b701b7a423dae5e6a072"
+"@grpc/grpc-js@^0.8.1":
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/@grpc/grpc-js/-/grpc-js-0.8.1.tgz#3003a422577da39e7113566f2fdd4872f31e6090"
+  integrity sha512-e8gSjRZnOUefsR3obOgxG9RtYW2Mw83hh7ogE2ByCdgRhoX0mdnJwBcZOami3E0l643KCTZvORFwfSEi48KFIQ==
   dependencies:
-    lodash "^4.17.4"
+    semver "^6.2.0"
 
 "@grpc/proto-loader@^0.1.0":
   version "0.1.0"
@@ -1278,6 +1279,11 @@ seed-random@~2.2.0:
 semver@^5.3.0, semver@^5.5.0, semver@^5.5.1:
   version "5.6.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.6.0.tgz#7e74256fbaa49c75aa7c7a205cc22799cac80004"
+
+semver@^6.2.0:
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
+  integrity sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
 
 serialize-error@^2.1.0:
   version "2.1.0"
